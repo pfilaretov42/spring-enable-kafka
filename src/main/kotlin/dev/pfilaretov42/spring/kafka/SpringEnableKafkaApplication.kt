@@ -1,4 +1,4 @@
-package dev.pfilaretov42.springenablekafka
+package dev.pfilaretov42.spring.kafka
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
