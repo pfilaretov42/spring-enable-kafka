@@ -47,16 +47,16 @@ class KafkaConsumerConfig {
     @Value(value = "\${spring.kafka.consumer.group-id}")
     private val groupId: String? = null
 
-    @Bean
-    fun consumerFactory(): ConsumerFactory<String, String> {
-        val props = mapOf(
-            ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG to bootstrapServers,
-            ConsumerConfig.GROUP_ID_CONFIG to groupId,
-            ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
-            ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
-        )
-        return DefaultKafkaConsumerFactory(props)
-    }
+//    @Bean
+//    fun consumerFactory(): ConsumerFactory<String, String> {
+//        val props = mapOf(
+//            ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG to bootstrapServers,
+//            ConsumerConfig.GROUP_ID_CONFIG to groupId,
+//            ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
+//            ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG to StringDeserializer::class.java,
+//        )
+//        return DefaultKafkaConsumerFactory(props)
+//    }
 
 //    @Bean
 //    fun kafkaListenerContainerFactory(): ConcurrentKafkaListenerContainerFactory<String, String> {
