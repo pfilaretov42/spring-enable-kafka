@@ -37,7 +37,7 @@ class KafkaProducerConfig {
         KafkaTemplate(producerFactory)
 }
 
-@EnableKafka
+//@EnableKafka
 @Configuration
 class KafkaConsumerConfig {
 
