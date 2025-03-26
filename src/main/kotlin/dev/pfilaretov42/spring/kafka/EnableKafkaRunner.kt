@@ -38,14 +38,14 @@ class KafkaProducerConfig {
 }
 
 //@EnableKafka
-@Configuration
+//@Configuration
 class KafkaConsumerConfig {
 
-    @Value(value = "\${spring.kafka.bootstrap-servers}")
-    private val bootstrapServers: String? = null
+//    @Value(value = "\${spring.kafka.bootstrap-servers}")
+//    private val bootstrapServers: String? = null
 
-    @Value(value = "\${spring.kafka.consumer.group-id}")
-    private val groupId: String? = null
+//    @Value(value = "\${spring.kafka.consumer.group-id}")
+//    private val groupId: String? = null
 
 //    @Bean
 //    fun consumerFactory(): ConsumerFactory<String, String> {
