@@ -58,13 +58,13 @@ class KafkaConsumerConfig {
         return DefaultKafkaConsumerFactory(props)
     }
 
-    @Bean
-    fun kafkaListenerContainerFactory(): ConcurrentKafkaListenerContainerFactory<String, String> {
-        val factory =
-            ConcurrentKafkaListenerContainerFactory<String, String>()
-        factory.consumerFactory = consumerFactory()
-        return factory
-    }
+//    @Bean
+//    fun kafkaListenerContainerFactory(): ConcurrentKafkaListenerContainerFactory<String, String> {
+//        val factory =
+//            ConcurrentKafkaListenerContainerFactory<String, String>()
+//        factory.consumerFactory = consumerFactory()
+//        return factory
+//    }
 }
 
 private val logger = KotlinLogging.logger {}
