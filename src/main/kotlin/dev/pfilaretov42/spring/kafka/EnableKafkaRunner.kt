@@ -84,6 +84,6 @@ class EnableKafkaRunner(
 class MyKafkaListener {
     @KafkaListener(topics = ["my-topic"])
     fun consume(message: String) {
-        logger.info { "RECEIVED MESSAGE: $message" }
+        logger.info { "Message received: $message" }
     }
 }
